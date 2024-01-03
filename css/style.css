@@ -156,7 +156,6 @@ input.submit{
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #DEEBFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,6 +223,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .card {
