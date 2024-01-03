@@ -59,7 +59,6 @@ a {
 
 h1, h2, h3, h4, h5, p {
     margin: 0;
-    margin-bottom: 8px;
 }
 
 /* Ajout de l'effet de survol */
@@ -128,12 +127,10 @@ input.submit{
 /* Section filtre */
 .filters-section{
     display: flex;
-    margin: 20px 0 0 6px;
 }
 
 .filters-section h3{
-  margin: 15px 40px 0 30px;
-  font-size: 119%;
+  margin: 15px 40px 0 0;
 }
 
 .filters-section .filters-icon{
@@ -149,7 +146,6 @@ input.submit{
   border-radius: 30px;
   margin-right: 40px;
   cursor: pointer;
-  transition: 0.8s;
 }
 
 .filters-section .icon{
@@ -166,7 +162,6 @@ input.submit{
 
 .filters-section p{
   font-weight: 600;
-  font-size: 119%;
   display: flex;
   align-items: center;
   margin-left: 10px;
@@ -184,13 +179,16 @@ input.submit{
 .info{
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 0 20px;
+  gap: 10px;
 }
 
 .info-section h2{
-  margin-left: 10px;
-  font-size: 106%;
-  font-weight: 300;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
   color: rgb(59, 59, 59);
 }
 
@@ -203,7 +201,6 @@ input.submit{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
 }
 
 .info-section i{
@@ -258,7 +255,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 35px;
     box-sizing: border-box;
 }
 
@@ -297,29 +294,36 @@ a {
 
 .cardContent {
     padding: 0 10px;
-    letter-spacing: 1px;
 }
 
 .cardContent h3 {
-    font-size: 0.9em;
+    font-size: 16px;
     margin: 6px 0 10px;
-  }
-  .cardContent p {
+}
+.cardContent p {
     margin-bottom: 15px;
-    font-size: 0.74em;
-  }
-  .cardContent ul,
-  .cardContent li {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cardContent ul, .cardContent li {
+    padding: 0;
     display: flex;
     color: var(--main-color);
     margin-bottom: 5px;
-  }
-  .cardContent li:last-child {
+}
+
+.cardContent li:last-child {
     color: var(--main-bg-color);
-  }
-  .cardContent span {
+}
+.cardContent span {
     font-weight: 800;
-  }
+}
+
+.show-more {
+    font-size: 18px;
+    font-weight: 900;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -330,6 +334,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.populaires-cards a {
+    padding: 0;
 }
 
 .populaires-cards .card {
