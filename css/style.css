@@ -4,9 +4,13 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065fc;
+    --boddy-bg-color: white;
+    --main-bg-color: #f2f2f2;
+    --seconde-bg-color: #d9d9d9;
+    --filter-bg-color: #deebff;
+    --Box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    --Box-shadow-2: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .fa-solid {
@@ -121,6 +125,92 @@ input.submit{
     border-radius: 0px 15px 15px 0px;
 }
 
+/* Section filtre */
+.filters-section{
+    display: flex;
+    margin: 20px 0 0 6px;
+}
+
+.filters-section h3{
+  margin: 15px 40px 0 30px;
+  font-size: 119%;
+}
+
+.filters-section .filters-icon{
+  display: flex;
+}
+
+.filters-section .filters{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 30px;
+  border: #dfdede 2px solid;
+  border-radius: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.filters-section .icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 112%;
+  color: #0065fc;
+  margin-left: -4px; 
+}
+
+.filters-section p{
+  font-weight: 600;
+  font-size: 119%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.filters-section p:hover{
+  color: #0065fc;
+}
+  
+
+/* Info */
+.info-section{
+    margin-left: 5px;
+}
+.info{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.info-section h2{
+  margin-left: 10px;
+  font-size: 106%;
+  font-weight: 300;
+  color: rgb(59, 59, 59);
+}
+
+.info-section .circle-info{
+  border: #F2F2F2 solid 2px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.info-section i{
+  font-size: 81%;
+  
+}
 /* Loupe pour media queries */
 .fa-magnifying-glass{
     overflow: hidden;
@@ -174,8 +264,62 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    border-radius: 20px;
+    background-color: var(--main-bg-color);
+    padding: 30px;
+    width: 67%;
 }
+
+.cardContainer-hebergements {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card-hebergements {
+    flex-grow: 1;
+    flex-basis: 30%;
+    background-color: var(--boddy-bg-color);
+    box-shadow: var(--Box-shadow);
+    padding: 5px 5px 10px 5px;
+    border-radius: 20px;
+}
+
+.card-hebergements img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 114px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+}
+
+.cardContent {
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+.cardContent h3 {
+    font-size: 0.9em;
+    margin: 6px 0 10px;
+  }
+  .cardContent p {
+    margin-bottom: 15px;
+    font-size: 0.74em;
+  }
+  .cardContent ul,
+  .cardContent li {
+    display: flex;
+    color: var(--main-color);
+    margin-bottom: 5px;
+  }
+  .cardContent li:last-child {
+    color: var(--main-bg-color);
+  }
+  .cardContent span {
+    font-weight: 800;
+  }
 
 /****** Populaires ***********/
 .populaires {
