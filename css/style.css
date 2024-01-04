@@ -276,7 +276,7 @@ a {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px;
 }
 
 .card-hebergements {
@@ -422,6 +422,18 @@ a {
     padding: 10px;
 }
 
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 35px;
+    background-color: #F2F2F2;
+}
+
+.footer-content {
+    list-style: none;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
