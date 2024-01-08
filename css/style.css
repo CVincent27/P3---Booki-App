@@ -115,13 +115,22 @@ i.fa-location-dot {
 }
 
 /* Bouton Rechercher */
-input.submit{
-    font-weight: 700;
-    color: white;
-    padding: 15px 16px;
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
+#search-desktop{
+    position: relative;
+    right: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    height: 37px;
+    padding: 9px 12px 9px 12px;
+    cursor: pointer;
+}
+
+#search-mobile {
+    display: none;
 }
 
 /* Section filtre */
@@ -216,6 +225,7 @@ input.submit{
 .fa-magnifying-glass{
     overflow: hidden;
 }
+
 
 a {
     color: inherit;
@@ -496,7 +506,7 @@ a {
     .main-container {
         padding: 0;
     }
-
+    /* Header */
     header {
         width: 100%;
         margin-top: 20px;
@@ -519,11 +529,65 @@ a {
         border-bottom: 3px solid #d6d6d6;
     }
 
+    /* Main */
+    .landing-page {
+        padding: 10px;
+    }
+
+    /* Formulaire */
+    form {
+        width: 200px;
+    }
+    
+    #search-desktop {
+        display: none;
+    }
+
+    #search-mobile {
+        display: flex;
+        position: relative;
+        right: 15px;
+        height: 46px;
+        color: #ffffff;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 12px 12px 12px 12px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 9px 12px 9px 12px;
+        cursor: pointer;
+    }
+
+    /* Filtres */
     .filters-section {
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .filters-section .filters {
+        margin: 0;
+        width: 100%;
     }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
+
+
+    /* Populaires */
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
     }
 }
