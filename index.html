@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <class="main-container">
 
         <header>
             <img src="./images/logo/Booki.png" alt="logo du site">
@@ -26,53 +26,42 @@
         </header>
 
         <main class="landing-page">
-            <div class="padding_media_q">
-                <h1 class="titre-principal">Trouvez votre hébergement pour vos vacances de rêves</h1>
-                <!-- style dans le html ? -->
-                <h2 style="margin: 0 0 30px;">En plein centre-ville ou en pleine nature</h2>
+            <h1 class="titre-principal">Trouvez votre hébergement pour vos vacances de rêves</h1>
+            <!-- style dans le html ? -->
+            <h2 style="margin: 0 0 30px;">En plein centre-ville ou en pleine nature</h2>
     
             <!-- Intégration du formulaire -->
-                <form >
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input class="text_rechercher" type="text" name="rechercher" placeholder="Marseille, France"/>
-                    <!-- btn desktop -->
-                    <button id="search-desktop">Rechercher</button>
-                    <!-- btn mobile -->
-                    <button id="search-mobile">
-                        <i class="fas fa-search search-icon"></i>
-                    </button>
-                </form>
+            <form >
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="text_rechercher" type="text" name="rechercher" placeholder="Marseille, France"/>
+                <!-- btn desktop -->
+                <button id="search-desktop">Rechercher</button>
+                <!-- btn mobile -->
+                <button id="search-mobile">
+                    <i class="fas fa-search search-icon"></i>
+                </button>
+            </form>
     
     
             <!-- Filters -->
-            <section class="filters-section">
+            <section class="filter-section">
                 <h3>Filtres</h3>
-                <div class="filters-icon">
-                    <div class="filters">
-                        <div class="icon">
-                            <i class="fas fa-money-bill-wave icone_cercle"></i>
-                        </div>
-                            <p>Economique</p>
+                <div class="filter-flex">
+                    <div class="filter">
+                      <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                      <p>Economique</p>
                     </div>
-                    <div class="filters">
-                        <div class="icon">
-                            <i class="fas fa-child icone_cercle"></i>
-                        </div>
-                            <p>Familial</p>
+                    <div class="filter">
+                      <i class="fa-solid fa-person fa-lg"></i>
+                      <p>Familial</p>
                     </div>
-                </div>
-                <div class="filters-icon filters-column">
-                    <div class="filters">
-                        <div class="icon">
-                            <i class="fas fa-heart icone_cercle"></i>
-                        </div>
-                            <p>Romantique</p>
+                    <div class="filter">
+                      <i class="fa-solid fa-heart fa-lg"></i>
+                      <p>Romantique</p>
                     </div>
-                    <div class="filters">
-                        <div class="icon">
-                            <i class="fas fa-fire icone_cercle"></i>
-                        </div>
-                            <p>Nos pépites</p>
+                    <div class="filter">
+                      <i class="fa-solid fa-fire fa-lg"></i>
+                      <p>Nos pépites</p>
                     </div>
                 </div>
             </section>
