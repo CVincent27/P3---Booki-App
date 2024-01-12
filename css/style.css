@@ -19,10 +19,6 @@
 
 body {
     max-width: 1440px;
-}
-
-.main-container {
-    width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -619,10 +615,12 @@ a {
 
     .hebergements-and-populaires section {
         border-radius: 0;
+        padding: 0;
     }
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
+        margin-top: 50px;
     }
 
     .cardContainer-hebergements {
