@@ -35,7 +35,6 @@ header {
 /* Logo du site */
 header img {
     height: 22px;
-
 }
 
 /* Menu nav */
@@ -81,7 +80,6 @@ h2 {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-
 }
 
 /* Formulaire */
@@ -92,7 +90,6 @@ form{
     border-radius: 15px 0px 0px 15px;
     width: 250px;
     margin: 12px 0 24px 0;
-
 }
 
 i.fa-location-dot {
@@ -110,7 +107,7 @@ i.fa-location-dot {
     color: black;
     text-align: center;
     font-weight: 700;
-   border: none; 
+    border: none; 
 }
 
 /* Bouton Rechercher */
@@ -140,26 +137,29 @@ i.fa-location-dot {
     gap: 16px 24px;
     flex-wrap: wrap;
     flex-direction: column;
-  }
+}
 
-  .filter-flex {
+.filter-flex {
     display: flex;
     gap: 20px;
-  }
+}
 
-  .filter-list h1 {
+.filter-list h1 {
     margin-bottom: 0;
-  }
-  .filter {
+}
+
+.filter {
     border: 2px solid #f2f2f2;
     border-radius: 2rem;
     display: flex;
     align-items: center;
-  }
-  .filter i {
+}
+
+.filter i {
     width: 25px;
-  }
-  .filter .fa-solid {
+}
+
+.filter .fa-solid {
     color: #0065fc;
     border-radius: 50%;
     width: 2rem;
@@ -168,20 +168,22 @@ i.fa-location-dot {
     padding: 0 12px;
     align-items: center;
     justify-content: center;
-  }
-  .filter p {
+}
+
+.filter p {
     font-weight: bold;
     padding-right: 16px;
-  }
-  .filter:hover {
-    background-color: #deebff;
-  }
-  
+}
 
+.filter:hover {
+    background-color: #deebff;
+}
+  
 /* Info */
 .info-section{
     margin-left: 5px;
 }
+
 .info{
   display: flex;
   align-items: center;
@@ -217,7 +219,6 @@ i.fa-location-dot {
 .fa-magnifying-glass{
     overflow: hidden;
 }
-
 
 a {
     color: inherit;
@@ -386,6 +387,7 @@ a {
 .activite {
     margin: 50px 25px;
 }
+
 .activite h2 {
     margin-bottom: 30px;
     font-weight: 700;
