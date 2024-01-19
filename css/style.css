@@ -61,68 +61,74 @@ li:hover a{
     padding-top: 22px;
 }
 
+
+.find-location {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 20px;
+}
+
 /* Landing page */
 .landing-page h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    margin-top: 24px;
-}
-
-.find-location {
-    padding: 0 20px;
+    margin: 0;
 }
 
 h2 {
+    margin: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
 }
 
 /* Formulaire */
-form{
+form {
     display: flex;
-    align-items: center;
-    background: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    width: 250px;
-    margin: 12px 0 24px 0;
 }
 
-i.fa-location-dot {
+.form_location {
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0px 0px 15px;
+    height: 50px;
+    width: 50px;
+}
+
+.form_location i {
+    /* color a corriger */
     color: #000000;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .text_rechercher {
-    border: white;
-    height: 48px;
+    border: var(--main-bg-color) solid 1px;
+    height: 46px;
+    color: black;
+    font-weight: 700;
+
 }
 
-::placeholder{
-    color: black;
-    text-align: center;
-    font-weight: 700;
-    border: none; 
-}
 
 /* Bouton Rechercher */
-#search-desktop{
-    position: relative;
-    right: 3px;
+.search_button{
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
     background-color: #0065FC;
     border: none;
-    border-radius: 0px 12px 12px 0px;
-    height: 48px;
-    padding: 9px 12px 9px 12px;
-    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#search-mobile {
+.search_button i {
     display: none;
 }
 
@@ -138,11 +144,7 @@ i.fa-location-dot {
 
 .filter-flex {
     display: flex;
-    gap: 20px;
-}
-
-.filter-list h1 {
-    margin-bottom: 0;
+    gap: 15px;
 }
 
 .filter {
@@ -150,22 +152,17 @@ i.fa-location-dot {
     border-radius: 2rem;
     display: flex;
     align-items: center;
+    padding: 4px 19px;
+    gap: 10px;
+    height: 50px;
 }
 
 .filter i {
-    width: 25px;
+    
+    color: #0065fc;
 }
 
-.filter .fa-solid {
-    color: #0065fc;
-    border-radius: 50%;
-    width: 2rem;
-    height: 3rem;
-    display: flex;
-    padding: 0 12px;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .filter p {
     font-weight: bold;
@@ -281,7 +278,7 @@ a {
 
 .card-hebergements {
     flex-grow: 1;
-    flex-basis: 30%;
+    flex-basis: 29%;
     background-color: var(--boddy-bg-color);
     box-shadow: var(--Box-shadow);
     padding: 5px 5px 10px 5px;

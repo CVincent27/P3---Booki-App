@@ -31,17 +31,19 @@
     </header>
     <main class="landing-page">
       <section class="find-location">
-        <h1 class="titre-principal">
-          Trouvez votre hébergement pour des vacances de rêves
-        </h1>
-        <!-- style dans le html ? NON ! -->
-        <h2 style="margin: 0 0 30px">
-          En plein centre-ville ou en pleine nature
-        </h2>
+        <div>
+          <h1 class="titre-principal">
+            Trouvez votre hébergement pour des vacances de rêves
+          </h1>
+          <!-- style dans le html ? NON ! -->
+          <h2>En plein centre-ville ou en pleine nature</h2>
+        </div>
 
         <!-- Intégration du formulaire -->
         <form>
-          <i class="fa-solid fa-location-dot"></i>
+          <div class="form_location">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
           <input
             class="text_rechercher"
             type="text"
@@ -49,9 +51,8 @@
             value="Marseille, France"
           />
           <!-- 1 seul btn ! -->
-          <button id="search-desktop">Rechercher</button>
-          <!-- btn mobile -->
-          <button id="search-mobile">
+          <button type="submit" class="search_button">
+            <span>Rechercher</span>
             <i class="fas fa-search search-icon"></i>
           </button>
         </form>
@@ -355,7 +356,7 @@
     <footer>
       <section class="footer">
         <ul class="footer-content">
-            <!-- mettre liens dans li -->
+          <!-- mettre liens dans li -->
           <li><h3>A propos</h3></li>
           <li>Fonctionnement du site</li>
           <li>Conditions générales</li>
