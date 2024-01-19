@@ -19,9 +19,9 @@
 
 body {
     max-width: 1440px;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+    /* padding sur tablet et desktop */
+    padding: 0 2%;
+    margin: auto;
 }
 
 /* ---- Section header ---- */
@@ -63,8 +63,6 @@ li:hover a{
 
 /* Landing page */
 .landing-page h1 {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -427,30 +425,29 @@ a {
 
 /* Footer */
 .footer {
+    gap: 30px;
     display: flex;
-    justify-content: space-around;
     padding: 20px;
     margin-top: 35px;
-    background-color: #F2F2F2;
+    /* revoir le code pour intégrer variables */
+    background-color: var(--main-bg-color);
 }
 
 .footer-content {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 15px;
+    flex: 1;
+    padding-left: 0;
+    margin: 0;
 }
 
 .footer-content h3 {
-    margin-bottom: 14px;
     font-weight: 700;
     font-size: 18px;
 }
 
-.footer-content li {
-    font-weight: 400;
-    font-size: 16px;
-}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
