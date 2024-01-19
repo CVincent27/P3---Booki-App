@@ -18,27 +18,34 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     max-width: 1440px;
     /* padding sur tablet et desktop */
-    padding: 0 2%;
+    padding: 0 50px;
     margin: auto;
 }
 
 /* ---- Section header ---- */
 header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 
 /* Logo du site */
 header img {
-    height: 22px;
+    height: 19px;
+    padding: 30px 0;
 }
 
 /* Menu nav */
-ul {
+.list_nav {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 68px;
     list-style: none;
 }
 
@@ -61,23 +68,28 @@ li:hover a{
     padding-top: 22px;
 }
 
-
+/* Landing page */
 .find-location {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding: 0 20px;
+    margin-bottom: 35px;
 }
 
-/* Landing page */
-.landing-page h1 {
+.main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
 }
 
-h2 {
+main h2 {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -126,6 +138,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 16px;
 }
 
 .search_button i {
@@ -136,10 +149,10 @@ form {
 .filter-section {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    gap: 16px 24px;
+    align-items: center;
+    gap: 15px;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .filter-flex {
@@ -155,18 +168,15 @@ form {
     padding: 4px 19px;
     gap: 10px;
     height: 50px;
+    background-color: var(--boddy-bg-color);
 }
 
 .filter i {
-    
-    color: #0065fc;
+    color: var(--main-color);
 }
-
-
 
 .filter p {
     font-weight: bold;
-    padding-right: 16px;
 }
 
 .filter:hover {
@@ -181,7 +191,6 @@ form {
 .info{
   display: flex;
   align-items: center;
-  margin: 30px 0 20px;
   gap: 10px;
 }
 
@@ -252,13 +261,13 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 35px;
-    box-sizing: border-box;
+    padding: 30px;
 }
 
 /****** Hebergements ***********/
@@ -266,65 +275,71 @@ a {
     border-radius: 20px;
     background-color: var(--main-bg-color);
     padding: 30px;
-    width: 67%;
+
 }
 
 .cardContainer-hebergements {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
 }
 
 .card-hebergements {
     flex-grow: 1;
-    flex-basis: 29%;
+    flex-basis: 28%;
     background-color: var(--boddy-bg-color);
     box-shadow: var(--Box-shadow);
-    padding: 5px 5px 10px 5px;
     border-radius: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .card-hebergements img {
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 114px;
+    border-radius: 20px 20px 0 0;
+    width: 96%;
+    height: 124px;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1 / 1;
+    padding: 0;
+    border: 5px var(--boddy-bg-color) solid;
+    margin: 0;
 }
 
-.cardContent {
-    padding: 0 10px;
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px 15px;
 }
 
-.cardContent h3 {
+.card-description h3 {
     font-size: 16px;
-    margin: 6px 0 10px;
 }
-.cardContent p {
-    margin-bottom: 15px;
+.card-description p {
     font-size: 14px;
     font-weight: 400;
 }
 
-.cardContent ul, .cardContent li {
+.starsContainer, .starsContainer li {
     padding: 0;
     display: flex;
     color: var(--main-color);
-    margin-bottom: 5px;
 }
 
-.cardContent li:last-child {
+.starsContainer li:last-child {
     color: var(--main-bg-color);
 }
-.cardContent span {
+.starsContainer span {
     font-weight: 800;
 }
 
 .show-more {
     font-size: 18px;
     font-weight: 900;
+    padding: 0;
+    margin: 0;
 }
 
 /****** Populaires ***********/
@@ -379,7 +394,7 @@ a {
 
 /* Activités */
 .activite {
-    margin: 50px 25px;
+    margin: 50px 0;
 }
 
 .activite h2 {
