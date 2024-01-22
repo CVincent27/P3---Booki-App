@@ -46,6 +46,7 @@ header img {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 68px;
+    padding: 0 50px;
     list-style: none;
 }
 
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, p {
 li:hover a{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 22px;
+    padding-top: 28px;
 }
 
 /* Landing page */
@@ -149,10 +150,10 @@ form {
 .filter-section {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .filter-flex {
@@ -197,7 +198,7 @@ form {
   align-items: center;
   font-size: 16px;
   font-weight: 400;
-  color: rgb(59, 59, 59);
+  color: black;
 }
 
 .info .circle-info{
@@ -492,11 +493,6 @@ a {
     }
 
     /* Populaire */
-
-    .populaires {
-
-    }
-
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -545,10 +541,20 @@ a {
     /* Header */
     header {
         width: 100%;
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    /* Logo du site */
+    header img {
+        padding: 30px;
+    }
+
+    .list_nav {
+        width: 100%;
+        gap: 0;
+        padding: 0;
     }
 
     ul {
@@ -563,15 +569,22 @@ a {
     .nav_bar a {
         display: flex;
         justify-content: center;
-        padding: 15px 25px;
+        padding: 15px;
         width: 100%;
         border-bottom: 3px solid #d6d6d6;
     }
 
     li:hover a{
         border-top: none;
+        border-bottom: 2px solid blue;
         padding: 15px 25px;
     }
+
+    /* Landing page */
+    .find-location {
+        gap: 35px;
+        margin: 0 20px;
+}
 
     /* Main */
     .landing-page {
@@ -580,66 +593,64 @@ a {
 
     /* Formulaire */
     form {
-        width: 90%;
+        width: 100%;
     }
 
     .text_rechercher {
         width: 100%;
     }
-    
-    #search-desktop {
+    .search_button {
+        border-radius: 15px;
+    }
+
+    .search_button span {
         display: none;
     }
-
-    #search-mobile {
+    .search_button i {
         display: flex;
-        align-items: center;
-        position: relative;
-        right: 0px;
-        height: 49px;
-        width: 49px;
-        color: #ffffff;
-        background-color: #0065FC;
-        border: none;
-        border-radius: 12px 12px 12px 12px;
-        font-weight: bold;
-        font-size: 16px;
-        padding: 9px 9px 9px 9px;
-        cursor: pointer;
-        justify-content: center;
-    }
 
+    }
     /* Filtres */
     .filter-section {
         flex-direction: column;
-        gap: 25px;
+        align-items: self-start;
+        gap: 20px;
     }
 
     .filter-section .filter {
         margin: 0;
-        width: 40%;
+        width: 48%;
+        padding: 4px 19px;
     }
 
     .filter-flex {
         flex-wrap: wrap;
+        gap: 20px 10px;
     }
 
-    /* Populaires */
-    .populaires {
-        width: 100%;
+    .info{
+        margin-bottom: 35px;
     }
+    /* Populaires */
 
     .populaires-cards {
         flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
     }
     
     .populaires-cards a {
         width: 100%;
     }
 
+    .populaires-cards .card-content{
+        padding: 10px 5px 5px 15px;
+    }
+
     /* Hebergement et populaire */
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        gap: 15%;
     }
 
     .hebergements-and-populaires section {
@@ -649,11 +660,12 @@ a {
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
-        padding: 30px 20px;
+        padding: 20px;
     }
 
     .cardContainer-hebergements {
         flex-direction: column;
+        gap: 15px;
     }
 
     /* Activités */
@@ -673,12 +685,13 @@ a {
     /* Footer */
     .footer {
         flex-direction: column;
-        gap: 20px;
-        padding: 0 20px 20px;
+        gap: 50px;
+        padding: 30px;
     }
 
     .footer-content {
         gap: 6px;
+        padding: 0;
     }
 
     .footer-content h3 {
