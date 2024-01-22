@@ -42,8 +42,6 @@ header img {
 /* Menu nav */
 .list_nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     gap: 68px;
     padding: 0 50px;
     list-style: none;
@@ -83,17 +81,12 @@ li:hover a{
 }
 
 main h1 {
-    font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
-    margin: 0;
 }
 
 main h2 {
-    margin: 0;
     font-size: 16px;
     font-weight: 400;
-    line-height: 19px;
 }
 
 /* Formulaire */
@@ -107,7 +100,6 @@ form {
     align-items: center;
     justify-content: center;
     border-radius: 15px 0px 0px 15px;
-    height: 50px;
     width: 50px;
 }
 
@@ -119,8 +111,6 @@ form {
 
 .text_rechercher {
     border: var(--main-bg-color) solid 1px;
-    height: 46px;
-    color: black;
     font-weight: 700;
 
 }
@@ -147,11 +137,8 @@ form {
 
 /* Filtres */
 .filter-section {
-    width: 100%;
     display: flex;
-    align-items: flex-start;
     gap: 15px;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -257,7 +244,6 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
     margin-bottom: 35px;
 }
