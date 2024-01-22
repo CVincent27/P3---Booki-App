@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     gap: 30px;
     max-width: 1440px;
-    /* padding sur tablet et desktop */
     padding: 0 50px;
     margin: auto;
 }
@@ -64,8 +63,8 @@ h1, h2, h3, h4, h5, p {
 
 /* Ajout de l'effet de survol */
 li:hover a{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
     padding-top: 28px;
 }
 
@@ -103,7 +102,7 @@ form {
 }
 
 .form_location {
-    background: #F2F2F2;
+    background: var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +131,7 @@ form {
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     border: none;
     border-radius: 0px 15px 15px 0px;
     height: 50px;
@@ -162,7 +161,7 @@ form {
 }
 
 .filter {
-    border: 2px solid #f2f2f2;
+    border: 2px solid var(--main-bg-color);
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -181,7 +180,7 @@ form {
 }
 
 .filter:hover {
-    background-color: #deebff;
+    background-color: var(--filter-bg-color);
 }
   
 /* Info */
@@ -202,11 +201,11 @@ form {
 }
 
 .info .circle-info{
-  border: #F2F2F2 solid 2px;
+  border: var(--main-bg-color) solid 2px;
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  color: #0065fc;
+  color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,9 +232,9 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--boddy-bg-color);
     border-radius: 20px;
-    border: 5px solid white;
+    border: 5px solid var(--boddy-bg-color);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -418,7 +417,7 @@ a {
 .activite-card {
     background-color: #fff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: var(--Box-shadow-2);
     width: 22%;
     height: 439px;
 }
@@ -471,11 +470,6 @@ a {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
-    li:hover a{
-        padding-top: 30px;
-    }
-
     /* Filtres tablet */
     .filter{
         padding: 0 5px;
@@ -659,7 +653,7 @@ a {
     }
 
     .hebergements-and-populaires .hebergements {
-        background-color: white;
+        background-color: var(--boddy-bg-color);
         padding: 20px;
     }
 
