@@ -332,11 +332,9 @@ a {
 }
 .populaires-cards .card {
     display: flex;
-    width: 369px;
     height: 146px;
 }
 .populaires-cards img {
-    width: 123px;
     height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -514,6 +512,7 @@ a {
     }
     li:hover #nav_link{
         border-top: 0;
+        padding-top: 15px;
         border-bottom: 2px solid blue;
     }
     ul {
@@ -559,17 +558,12 @@ a {
     }
 
     /* Filtres */
-    .filter-section {
-        gap: 20px;
-    }
-    .filter-section .filter {
-        margin: 0;
-        width: 48%;
-        padding: 4px 19px;
-    }
     .filter-flex {
         flex-wrap: wrap;
         gap: 20px 10px;
+    }
+    .filter {
+        flex: 1 0 calc(50% - 20px);
     }
     .info{
         margin-bottom: 35px;
