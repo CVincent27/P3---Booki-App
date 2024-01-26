@@ -149,6 +149,7 @@ form {
     gap: 10px;
     height: 50px;
     background-color: var(--boddy-bg-color);
+    box-sizing: border-box;
 }
 
 .filter i {
@@ -259,12 +260,11 @@ a {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
 }
 .card-hebergements {
     flex-grow: 1;
     flex-basis: 100%;
-    max-width: 25%;
+    max-width: 30%;
     border: 5px var(--boddy-bg-color) solid;
     background-color: var(--boddy-bg-color);
     box-shadow: var(--Box-shadow);
@@ -335,7 +335,7 @@ a {
     height: 146px;
 }
 .populaires-cards img {
-    height: 146px;
+    width: 33%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -431,7 +431,6 @@ a {
         gap: 20px;
     }
     .filter p{
-        padding: 3px;
         font-size: 16px;
     }
     .hebergements-and-populaires {
@@ -558,12 +557,16 @@ a {
     }
 
     /* Filtres */
+    .filter p{
+        font-size: 14px;
+    }
     .filter-flex {
         flex-wrap: wrap;
-        gap: 20px 10px;
+        gap: 20px 0;
     }
     .filter {
-        flex: 1 0 calc(50% - 20px);
+        width: 50%;
+        box-sizing: border-box;
     }
     .info{
         margin-bottom: 35px;
