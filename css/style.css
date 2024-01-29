@@ -40,9 +40,13 @@ header img {
 
 .list_nav {
     display: flex;
-    gap: 68px;
     padding: 0 50px;
+}
+
+.list_nav ul {
+    display: flex;
     list-style: none;
+    gap: 68px;
 }
 
 a {
@@ -54,7 +58,7 @@ a {
 }
 
 /* Ajout de l'effet de survol */
-li:hover #nav_link {
+li:hover .nav_link {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
     padding-top: 28px;
@@ -483,13 +487,14 @@ a {
         gap: 0;
         padding: 0;
     }
-    li:hover #nav_link {
+    li:hover .nav_link {
         border-top: 0;
         padding-top: 15px;
         border-bottom: 2px solid blue;
     }
-    ul {
+    .list_nav ul {
         width: 100%;
+        gap: 0px;
         padding: 0;
     }
     .nav_bar {
@@ -591,10 +596,6 @@ a {
     }
     .card-hebergements {
         max-width: 100%;
-    }
-
-    .card-hebergements img {
-
     }
 
     /* Activités */
