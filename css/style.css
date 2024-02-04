@@ -9,13 +9,13 @@
     --main-bg-color: #f2f2f2;
     --seconde-bg-color: #d9d9d9;
     --filter-bg-color: #deebff;
+    --black-color: #000000;
     --Box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .fa-solid {
     color: var(--main-color);
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ header img {
     gap: 68px;
 }
 a {
-    color: #000000;
+    color: var(--black-color);
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
@@ -90,8 +90,7 @@ form {
     width: 50px;
 }
 .form_location i {
-    /* color a corriger */
-    color: rgb(0, 0, 0);
+    color: var(--black-color);
 }
 .text_rechercher {
     border: var(--main-bg-color) solid 1px;
@@ -100,7 +99,7 @@ form {
 
 /* Bouton Rechercher */
 .search_button {
-    color: rgba(255, 255, 255, 1);
+    color: var(--boddy-bg-color);
     font-weight: bold;
     font-size: 16px;
     background-color: var(--main-color);
@@ -166,7 +165,7 @@ form {
     align-items: center;
     font-size: 16px;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: var(--black-color);
 }
 .info .circle-info {
     border: var(--main-bg-color) solid 2px;
@@ -181,7 +180,6 @@ form {
 .info i {
     font-size: 81%;
 }
-/* Loupe media queries */
 .fa-magnifying-glass {
     overflow: hidden;
 }
@@ -352,7 +350,7 @@ a {
     gap: 30px;
 }
 .activite-card {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--boddy-bg-color);
     border-radius: 25px;
     box-shadow: var(--Box-shadow);
     width: 100%;
@@ -394,6 +392,7 @@ a {
 .footer-link {
     padding: 0;
 }
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -445,6 +444,7 @@ a {
         align-items: flex-start;
         margin: 0;
     }
+
     .footer {
         margin-top: 5px;
     }
@@ -456,11 +456,9 @@ a {
         margin: 0;
         padding: 0;
     }
-
     .main-container {
         padding: 0;
     }
-
     header {
         display: flex;
         flex-direction: column;
