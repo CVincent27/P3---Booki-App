@@ -537,6 +537,7 @@ a {
         gap: 10px;
     }
     .filter {
+        white-space: nowrap;
         width: 100%;
         box-sizing: border-box;
     }
