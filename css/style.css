@@ -93,8 +93,10 @@ form {
     color: var(--black-color);
 }
 .text_rechercher {
+    text-align: center;
     border: var(--main-bg-color) solid 1px;
     font-weight: 700;
+    font-size: 18px;
 }
 
 /* Bouton Rechercher */
@@ -131,6 +133,7 @@ form {
     gap: 15px;
 }
 .filter {
+    white-space: nowrap;
     width: 100%;
     border: 2px solid var(--main-bg-color);
     border-radius: 2rem;
@@ -171,7 +174,7 @@ form {
     border: var(--main-bg-color) solid 2px;
     border-radius: 50%;
     height: 25px;
-    width: 25px;
+    min-width: 25px;
     color: var(--main-color);
     display: flex;
     justify-content: center;
@@ -504,11 +507,14 @@ a {
     /* Formulaire */
     .text_rechercher {
         width: 100%;
+        text-align: start;
+        padding-left: 20px;
     }
     .search_button {
         border-radius: 15px;
         position: relative;
-        right: 10px;
+        margin-left: -15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
     }
     .search_button span {
         display: none;
@@ -532,14 +538,15 @@ a {
         width: 100%;
     }
     .filter-mobile {
-        flex-direction: row;
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     .filter {
-        white-space: nowrap;
         width: 100%;
         box-sizing: border-box;
+        padding: 4px 13px;
     }
     .info {
         margin-bottom: 35px;
