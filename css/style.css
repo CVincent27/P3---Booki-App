@@ -19,7 +19,6 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     max-width: 1440px;
     padding: 0 50px;
     margin: auto;
@@ -30,6 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 header img {
     height: 19px;
@@ -379,6 +379,7 @@ a {
 .footer {
     display: flex;
     background-color: var(--main-bg-color);
+    margin-top: 30px;
 }
 .footer-content {
     list-style: none;
