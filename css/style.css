@@ -263,6 +263,7 @@ a {
     gap: 8px;
     padding: 0 15px 15px;
     margin-top: 4px;
+    justify-content: space-between;
 }
 .card-description h3 {
     font-size: 16px;
